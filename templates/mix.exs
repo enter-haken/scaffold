@@ -24,7 +24,11 @@ defmodule <%= app_module %>.MixProject do
       {:plug, "~> 1.10"},
       {:plug_cowboy, "~> 2.1"},
       {:poison, "~> 4.0"},
-      {:earmark, "~> 1.4"}
+      {:earmark, "~> 1.4"},
+      {:guardian, "~> 2.0"},
+      {:cors_plug, "~> 2.0"},
+      {:sse, "~> 0.4"},
+      {:event_bus, "~> 1.6"}
     ]
   end
 end

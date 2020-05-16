@@ -3,6 +3,8 @@ defmodule <%= app_module %>.Web.Router do
 
   plug(<%= app_module %>.Web.Plug.Bakery)
 
+  plug(CORSPlug, origin: "*")
+
   plug(:match)
 
   plug(Plug.Parsers,
