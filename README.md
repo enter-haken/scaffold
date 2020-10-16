@@ -12,7 +12,7 @@ On the backend site, it generates some elixir files for
 
 On the client site it uses
 
-* an Angular 8 template
+* an Angular 10 template
 * bulma style
 
 ## install
@@ -33,19 +33,21 @@ will remove it again.
 
 ```
 $ mix scaffold.new test_application
+TestApplication/.gitignore created.
+TestApplication/.tool-versions created.
 TestApplication/Dockerfile created.
 TestApplication/Makefile created.
 TestApplication/README.md created.
+TestApplication/client/.browserslistrc created.
+TestApplication/client/.editorconfig created.
+TestApplication/client/.gitignore created.
 TestApplication/client/Makefile created.
-TestApplication/client/README.md created.
 TestApplication/client/angular.json created.
-TestApplication/client/browserslist created.
 TestApplication/client/e2e/protractor.conf.js created.
 TestApplication/client/e2e/src/app.e2e-spec.ts created.
 TestApplication/client/e2e/src/app.po.ts created.
 TestApplication/client/e2e/tsconfig.json created.
 TestApplication/client/karma.conf.js created.
-TestApplication/client/package-lock.json created.
 TestApplication/client/package.json created.
 TestApplication/client/src/app/app-routing.module.ts created.
 TestApplication/client/src/app/app.component.html created.
@@ -53,6 +55,7 @@ TestApplication/client/src/app/app.component.scss created.
 TestApplication/client/src/app/app.component.spec.ts created.
 TestApplication/client/src/app/app.component.ts created.
 TestApplication/client/src/app/app.module.ts created.
+TestApplication/client/src/assets/.gitkeep created.
 TestApplication/client/src/environments/environment.prod.ts created.
 TestApplication/client/src/environments/environment.ts created.
 TestApplication/client/src/favicon.ico created.

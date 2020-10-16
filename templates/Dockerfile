@@ -1,4 +1,4 @@
-FROM node:12.2.0 as client_builder 
+FROM node:14.8.0 as client_builder
 
 # set working directory
 WORKDIR /app
@@ -6,17 +6,17 @@ WORKDIR /app
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install -g @angular/cli@8.0.3
+RUN npm install -g @angular/cli@10.1.6
 
 # add app
 
 COPY client/ .
 
-RUN make deep_clean build 
+RUN make deep_clean build
 
 # backend builder
 
-FROM elixir:1.9.4 AS backend_builder
+FROM elixir:1.10.4 AS backend_builder
 
 WORKDIR /app
 
@@ -29,9 +29,9 @@ RUN mix local.rebar --force
 
 RUN make release
 
-# backend runner 
+# backend runner
 
-FROM elixir:1.9.4-slim AS runner
+FROM elixir:1.10.4-slim AS runner
 
 WORKDIR /app
 
