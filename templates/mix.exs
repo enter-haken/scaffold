@@ -1,11 +1,11 @@
-defmodule <%= app_module %>.MixProject do
+defmodule TestTos.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :<%= app_name %>,
+      app: :test_tos,
       version: "0.1.0",
-      elixir: "~> 1.10",
+      elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -14,7 +14,7 @@ defmodule <%= app_module %>.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {<%= app_module %>.Application, []}
+      mod: {TestTos.Application, []}
     ]
   end
 
