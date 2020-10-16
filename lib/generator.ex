@@ -1,6 +1,6 @@
 defmodule Scaffold.Generator do
   files =
-    Path.wildcard("templates/**")
+    Path.wildcard("templates/**", match_dot: true)
     |> Enum.filter(fn x ->
       case File.stat!(x) do
         %File.Stat{
