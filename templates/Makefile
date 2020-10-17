@@ -56,6 +56,12 @@ docker_run:
 		-d \
 		-t <%= app_name %> 
 
+.PHONY: docker_reset
+docker_reset:
+	docker stop <%= app_name %> || true
+	docker rm <%= app_name %> || true
+	docker rmi <%= app_name %> || true
+
 .PHONY: ignore
 ignore:
 	find deps/ > .ignore || true
