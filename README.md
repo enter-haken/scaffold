@@ -2,6 +2,9 @@
 
 This is a mix task for creating a elixir web application with [cowboy][1] and [angular][2].
 
+Of course there are several ways to get a good foundation for a web project.
+This is just an other attempt.
+
 ## requirements
 
 * Elixir ~> 1.10.4
@@ -158,7 +161,7 @@ $ make
 in your `client root folder`, to build the `client`. 
 It will install all necessary `node_modules`, if necessary.
 
-### sever
+### server
 
 If you call
 
