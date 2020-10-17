@@ -127,7 +127,7 @@ in the root of your newly generated project, all dependencies are gona be instal
 
 ### client
 
-The client part consists of a more or less standard angular project.
+The `client` part consists of a more or less standard angular project.
 The standard page is replaced with a more simple one.
 
 ```
@@ -155,7 +155,7 @@ You can call
 $ make
 ```
 
-in your client root folder, to build the client. 
+in your `client root folder`, to build the `client`. 
 It will install all necessary `node_modules`, if necessary.
 
 ### sever
@@ -182,9 +182,10 @@ You can see the result at `http://localhost:4040`.
 
 ## remarks
 
-* Due to the fast development of `elixir`, `erlang`, `cowboy` and `angular`, this project quickly can get out of date. There are a lot of "moving parts", which musst fit together.
+* Due to the fast development of `elixir`, `erlang`, `cowboy` and `angular`, this project quickly can get out of date. 
+There are a lot of "moving parts", which must fit together.
 
-* The latest versions depends on the newest available docker container, so you can run your applicatireasonably.
+* The latest versions depends on the newest available docker container, so you can run your application reasonably.
 
 # Contact
 
